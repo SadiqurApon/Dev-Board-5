@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="m-10">
+<body class="m-10 bg-base-50">
     <section>
         <header>
             <div class="navbar bg-base-100 shadow-sm justify-between items-center">
@@ -17,8 +17,8 @@
                     <img class="w-10" src="assets/logo.png" alt="">
                     <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
                 </div>
-                <div class="flex gap-4">
-                    <div class="flex items-center">
+                <div class="flex gap-6">
+                    <div class="flex items-center gap-4 bg-base-50 shadow-sm p-2 rounded-3xl">
                         <img class="w-4" src="assets/checkbox.png" alt="">
                         <h2 class="font-bold">23</h2>
                     </div>
@@ -26,17 +26,34 @@
                 </div>
             </div>
         </header>
-        <section class="mt-10">
-            <div class="grid grid-cols-2 gap-2 ">
-                <div class="bg-base-200 shrink-0 shadow-2xl">
-                    <p>1st row</p>
+    </section>
+    <!-- main Section -->
+    <section>
+        <div class="grid grid-cols-4 mt-6 gap-4 ">
+            <div class="col-span-3 bg-white shadow-sm rounded-xl">
+                <div class="grid grid-cols-5 p-4 gap-4">
+                    <div class="flex justify-center items-center gap-4 bg-blue-50 rounded-xl col-span-1">
+                        <div>
+                            <img class="w-8 p-2 bg-white rounded-full" src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-sm">Task Assigned</p>
+                            <h2 class="font-bold text-2xl">05</h2>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-4 bg-blue-300 rounded-xl col-span-3">
+                        <h2>task assigned</h2>
+                    </div>
+                    <div class="flex justify-center items-center gap-4 bg-blue-50 rounded-xl col-span-1">
+                        <h2>task assigned</h2>
+                    </div>
                 </div>
-                <div class="bg-base-200 ">
-                    <p>2nd row</p>
-                </div>
-                
             </div>
-        </section>
+            <!-- activity log -->
+            <div class="col-span-1 bg-white shadow rounded-xl ">
+                <h1>Activity log</h1>
+            </div>
+        </div>
     </section>
 
 </body>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-[#f7faff] min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="bg-blue-500 p-2 rounded-lg">
+        <span class="text-white font-bold text-xl">D</span>
+      </div>
+      <h1 class="text-2xl font-bold">Dev<span class="text-blue-600">Board</span></h1>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2 bg-blue-100 px-3 py-1 rounded-full">
+        <input type="checkbox" checked class="checkbox checkbox-sm checkbox-primary" />
+        <span class="font-semibold text-blue-600">23</span>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400"></div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="grid grid-cols-4 gap-6 p-6 max-w-7xl mx-auto">
+
+    <!-- Left Side (Task Assigned + Tasks) -->
+    <div class="col-span-3 space-y-6 bg-white rounded-xl shadow p-6">
+
+      <!-- Task Assigned -->
+      <div class=" ">
+        <p class="text-gray-500">Task Assigned</p>
+        <h2 class="text-3xl font-bold">05</h2>
+      </div>
+
+      <!-- Task Cards (6 box) -->
+      <div class="grid grid-cols-3 gap-4">
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">ShopEase</h3>
+          <p class="font-semibold">Fix Mobile Button Issue</p>
+          <p class="text-sm text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">CloudSync</h3>
+          <p class="font-semibold">Add Dark Mode</p>
+          <p class="text-sm text-gray-500 mt-2">Store preference in localStorage, update CSS vars...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">SwiftPay</h3>
+          <p class="font-semibold">Optimize Home Page</p>
+          <p class="text-sm text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">Meta</h3>
+          <p class="font-semibold">Add new emoji 👋</p>
+          <p class="text-sm text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">Google LLC</h3>
+          <p class="font-semibold">Integrate OpenAI API</p>
+          <p class="text-sm text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="card bg-blue-50 shadow-sm p-4">
+          <h3 class="font-bold text-blue-600 mb-2">Glassdoor</h3>
+          <p class="font-semibold">Improve Job Searching</p>
+          <p class="text-sm text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+            <button class="btn btn-sm btn-primary">Completed</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Side (Activity Log) -->
+    <div class="col-span-1 bg-white rounded-xl shadow p-6">
+      <h3 class="font-bold flex items-center gap-2 mb-4">⏳ Activity Log</h3>
+      <button class="btn btn-sm btn-primary w-full mb-4">Clear History</button>
+      <div class="space-y-2">
+        <div class="bg-blue-50 p-2 rounded-lg text-sm text-gray-600">
+          You have Completed Task <b>Add Dark Mode</b> at 12:48:15 PM
+        </div>
+        <div class="bg-blue-50 p-2 rounded-lg text-sm text-gray-600">
+          You have Completed Task <b>Fix Mobile Button Issue</b> at 11:20:10 AM
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
