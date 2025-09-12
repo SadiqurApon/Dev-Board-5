@@ -20,7 +20,7 @@
                 <div class="flex gap-6">
                     <div class="flex items-center gap-4 bg-base-100 shadow-sm p-2 rounded-3xl">
                         <img class="w-4" src="assets/checkbox.png" alt="">
-                        <h2 class="font-bold">23</h2>
+                        <h2 id="tik-mark-btn" class="font-bold">23</h2>
                     </div>
                     <button><img class="w-6" src="assets/theme-btn.png" alt=""></button>
                 </div>
@@ -39,10 +39,10 @@
                         </div>
                         <div>
                             <p class="text-sm">Task Assigned</p>
-                            <h2 class="font-bold text-2xl">05</h2>
+                            <h2 id="task-number" class="font-bold text-2xl">6</h2>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center  bg-blue-300 rounded-xl col-span-3">
+                    <div id="new-today" class="flex justify-center items-center  bg-blue-300 rounded-xl col-span-3">
                         <div class="p-4">
                             <img class="w-16" src="assets/board.png" alt="">
                         </div>
@@ -75,9 +75,7 @@
                                 <h4 class="font-semibold text-sm text-gray-500">Deadline</h4>
                                 <h3>21 March 2025</h3>
                             </div>
-                            <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
-                            </div>
+                            <button id="task-btn-A" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                         </div>
                     </div>
                     <!-- task card 2 -->
@@ -177,6 +175,20 @@
             </div>
         </div>
     </section>
+    <script>
+        // সবগুলো "Complete" বাটনের জন্য কাজ করবে
+        document.querySelectorAll("task-btn-A").forEach(button => {
+            button.addEventListener("click", function () {
+                this.disabled = true; // বাটন disable হবে
+                this.textContent = "Completed ✅"; // লেখা পরিবর্তন হবে
+                // this.classList.remove("btn-primary");
+                // this.classList.add("btn-success"); // রঙ সবুজ করে দিবে
+            });
+        });
+    </script>
+
+    <script src="script/answer.js"></script>
+    <script src="script/card-box.js"></script>
 
 </body>
 
