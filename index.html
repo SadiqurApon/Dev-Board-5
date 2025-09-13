@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <!-- Task Cards  -->
-                <div class="grid grid-cols-3 gap-4 m-6">
+                <div id="card-container" class="grid grid-cols-3 gap-4 m-6">
                     <!-- task card 1 -->
                     <div class="card bg-blue-50 p-4">
                         <span class="bg-base-100 p-2 mb-4 rounded-xl">ShopEase</span>
@@ -90,7 +90,7 @@
                                 <h3>21 March 2025</h3>
                             </div>
                             <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
+                                <button id="task-btn-B" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                                 <h3>21 March 2025</h3>
                             </div>
                             <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
+                                <button id="task-btn-C" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <h3>21 March 2025</h3>
                             </div>
                             <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
+                                <button id="task-btn-D" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                 <h3>21 March 2025</h3>
                             </div>
                             <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
+                                <button id="task-btn-E" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                                 <h3>21 March 2025</h3>
                             </div>
                             <div>
-                                <button class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
+                                <button id="task-btn-F" class="text-white bg-blue-700 rounded-xl p-2">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
             </div>
             <!-- activity log -->
             <div class="col-span-1 bg-white shadow rounded-xl ">
-                <div class="mt-5 text-center">
+                <div id="activity-section" class="mt-5 text-center">
                     <h1 class="text-sm font-bold mb-2 ">⏳ Activity Log</h1>
                     <button class="bg-blue-400 text-white p-1 rounded-xl px-2">Clear History</button>
                 </div>
@@ -175,20 +175,11 @@
             </div>
         </div>
     </section>
-    <script>
-        // সবগুলো "Complete" বাটনের জন্য কাজ করবে
-        document.querySelectorAll("task-btn-A").forEach(button => {
-            button.addEventListener("click", function () {
-                this.disabled = true; // বাটন disable হবে
-                this.textContent = "Completed ✅"; // লেখা পরিবর্তন হবে
-                // this.classList.remove("btn-primary");
-                // this.classList.add("btn-success"); // রঙ সবুজ করে দিবে
-            });
-        });
-    </script>
+    
 
     <script src="script/answer.js"></script>
     <script src="script/card-box.js"></script>
+    <script src="script/utilities.js"></script>
 
 </body>
 
