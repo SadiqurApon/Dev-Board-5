@@ -16,21 +16,62 @@
                 <img class="w-10" src="assets/logo.png" alt="">
                 <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
             </div>
-            <div class="flex gap-6">
-                <div class="flex items-center gap-4 bg-base-100 shadow-sm p-2 rounded-3xl">
-                    <img class="w-4" src="assets/checkbox.png" alt="">
-                    <h2 class="font-bold">23</h2>
-                </div>
-                <button><img class="w-6" src="assets/theme-btn.png" alt=""></button>
+            <div>
+                <button id="back-to-desk" class=" text-white font-semibold bg-blue-800 rounded-xl p-2">Back to
+                    Desk</button>
             </div>
         </div>
     </header>
     <section class="mt-5">
         <h1 class="text-3xl font-bold text-center">Blogs</h1>
         <div>
-            
+            <div class="bg-base-100 shadow-lg mt-10 w-9/12 mx-auto">
+                <p class="text-3xl font-bold text-center">que no 1</p>
+                <div class="text-xl p-4">
+                    <p>What are the different ways to select an element in the DOM?</p>
+                    <p>getElementById("id")</p>
+                    <p>getElementsByClassName("class")</p>
+                    <p>getElementsByTagName("tag")</p>
+                    <p>querySelector("cssSelector")</p>
+                    <p>querySelectorAll("cssSelector")</p>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-lg mt-10 w-9/12 mx-auto">
+                <p class="text-3xl font-bold text-center">que no 2</p>
+                <div class="text-xl p-4">
+                    <p>What is the difference between innerHTML, innerText, and textContent?</p>
+                    <p>innerHTML → Returns/sets HTML + text.</p>
+                    <p>innerText → Returns only visible text.</p>
+                    <p>textContent → Returns all text (including hidden).</p>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-lg mt-10 w-9/12 mx-auto">
+                <p class="text-3xl font-bold text-center">que no 3</p>
+                <div class="text-xl p-4">
+                    <p>What is event delegation in the DOM?</p>
+                    <p>Attaching one event listener to a parent element to handle events from it's child elements.</p>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-lg mt-10 w-9/12 mx-auto">
+                <p class="text-3xl font-bold text-center">que no 4</p>
+                <div class="text-xl p-4">
+                    <p>What is event bubbling in the DOM?</p>
+                    <p>When an event starts at the target element and bubbles up through its parent elements.</p>
+                </div>
+            </div>
+            <div class="bg-base-100 shadow-lg mt-10 w-9/12 mx-auto">
+                <p class="text-3xl font-bold text-center">que no 5</p>
+                <div class="text-xl p-4">
+                    <p>How do you create, add, and remove elements using JavaScript?</p>
+                    <p>Create: document.createElement("tag")</p>
+                    <p>Add: parent.appendChild(newElement) or parent.append(newElement)</p>
+                    <p>Remove: element.remove() or parent.removeChild(element)</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="script/backToDesk.js"></script>
 </body>
 
 </html>

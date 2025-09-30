@@ -1,4 +1,5 @@
 document.getElementById("new-today")
-.addEventListener("click", function(){
-    window.location.href = "./blog.html";
-})
+    .addEventListener("click", function () {
+        window.location.href = "./blog.html";
+    })
+
